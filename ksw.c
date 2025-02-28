@@ -26,7 +26,9 @@
 #include <stdlib.h>
 #include <stdint.h>
 #include <assert.h>
-#include <emmintrin.h>
+#define SIMDE_ENABLE_NATIVE_ALIASES
+#include "../simde-no-tests/x86/sse2.h"
+//#include <emmintrin.h>
 #include "ksw.h"
 
 #ifdef USE_MALLOC_WRAPPERS
